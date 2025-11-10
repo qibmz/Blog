@@ -12,12 +12,21 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true
   },
+  app: {
+    pageTransition: {
+      name: 'fade',
+      mode: 'out-in' // default
+    },
+    layoutTransition: {
+      name: 'slide',
+      mode: 'out-in' // default
+    }
+  },
   css: ['~/assets/css/main.css'],
 
   routeRules: {
     '/docs': { redirect: '/docs/getting-started', prerender: false }
   },
-
   compatibilityDate: '2024-07-11',
 
   nitro: {
