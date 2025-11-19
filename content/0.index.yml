@@ -13,6 +13,7 @@ hero:
       size: xl
     - label: 查看博客
       icon: i-lucide-book-open
-      trailing: true
+      color: neutral
+      variant: subtle
       to: /blog
       size: xl
